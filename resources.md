@@ -11,4 +11,6 @@
 * Lists: It has all the properties of collection, But it has a order, Need or need not be of same type.
 * Arrays: It has all the properties of collection, But it has a order, Need or need not be of same type, May or may not be of fixed length, Insertion and deletions takes O(n) linear time which is huge.
 * **Note:** Inserting into a Python list is actually O(n), while operations that search for an element at a particular spot are O(1). You can see the runtime of other list operations [here](https://wiki.python.org/moin/TimeComplexity), If you aren't already comfortable with Python lists, you can look through this [lesson](https://developers.google.com/edu/python/lists) about basic Python list manipulation.
-* Linked List: Extension of list, it has order but does not have indexes, it has links, adding and deleting element takes less time.
+* Linked List: Extension of list, it has order but does not have indexes, it has links, adding and deleting element takes less time, it just store the memory reference of next element and not index, we also have doubly linkedlist which store memory reference of previous and next element.
+* Stacks: Also a list based datastructures, Lifo processing are applied on stacks, easy acces to top elements, basically can be made by singly linked list, as it is  pretty abstract.
+
