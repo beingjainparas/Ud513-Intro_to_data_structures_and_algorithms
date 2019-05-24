@@ -42,3 +42,16 @@
   * You can learn more about merge sort, as well as see many more visualizations, in the online Algorithms [textbook](https://algs4.cs.princeton.edu/22mergesort/). This book is often nice for a more in-depth analysis of topics, but beware—all of the examples are in Java! For merge sort, it's particularly worth reading up on top-down and bottom-up merge sort.
 * **Note:**
   * Congrats on getting through three different types of sorts! You should also investigate some of the other famous sorting algorithms. You can watch all of them in action [here](https://visualgo.net/en/sorting?slide=1) (and see a coding solution too).
+
+## Lesson 4: Maps and Hashing
+* Maps are called as dictionary
+* A group of unique keys without any order is a set
+* In Python, the map concept appears as a built-in data type called a dictionary. A dictionary contains key-value pairs. Dictionaries might soon become your favorite data structure in Python—they're extremely easy to use and useful.
+* **Hashing and collision:** 
+  * A hash function is a function that takes input of a variable length sequence of bytes and converts it to a fixed length sequence. It is a one way function. This means if f is the hashing function, calculating f(x) is pretty fast and simple, but trying to obtain x again will take years.
+  * Hash tables must allow for hash collisions i.e. even if two keys have same hash value, the implementation of the table must have a strategy to insert and retrieve the key and value pairs unambiguously.
+  * Python dict uses open addressing to resolve hash collisions
+  * When we're talking about hash tables, we can define a "load factor":
+  * ```Load Factor = Number of Entries / Number of Buckets```
+  * The purpose of a load factor is to give us a sense of how "full" a hash table is. For example, if we're trying to store 10 values in a hash table with 1000 buckets, the load factor would be 0.01, and the majority of buckets in the table will be empty. We end up wasting memory by having so many empty buckets, so we may want to rehash, or come up with a new hash function with less buckets. We can use our load factor as an indicator for when to rehash—as the load factor approaches 0, the more empty, or sparse, our hash table is. 
+  * On the flip side, the closer our load factor is to 1 (meaning the number of values equals the number of buckets), the better it would be for us to rehash and add more buckets. Any table with a load value greater than 1 is guaranteed to have collisions.
