@@ -13,7 +13,7 @@
 * **Note:** Inserting into a Python list is actually O(n), while operations that search for an element at a particular spot are O(1). You can see the runtime of other list operations [here](https://wiki.python.org/moin/TimeComplexity), If you aren't already comfortable with Python lists, you can look through this [lesson](https://developers.google.com/edu/python/lists) about basic Python list manipulation.
 * **Linked List:** Extension of list, it has order but does not have indexes, it has links, adding and deleting element takes less time, it just store the memory reference of next element and not index, we also have doubly linkedlist which store memory reference of previous and next element.
 * **Stacks:** Also a list based datastructures, Lifo processing are applied on stacks, easy acces to top elements, basically can be made by singly linked list, as it is  pretty abstract.
-* **Queues:** Its ia a n opposite of stack, Fifo processing are applied on queues, example purchasing tickets on ticket counter, the first element in the queue is called head and the last elemnt in the queue is called tail, wen you add an element in queue it is called enqueue, and when you delete element from the queue it is called dequeue, peek is when you just look on the head element, again you can implement this data structure using linked list. deck is a mixture of stack and queue, priority queues are ones which has priority assigned to each value and the enque and deque operations takes place based on priority.
+* **Queues:** Its opposite of stack, Fifo processing are applied on queues, example purchasing tickets on ticket counter, the first element in the queue is called head and the last elemnt in the queue is called tail, wen you add an element in queue it is called enqueue, and when you delete element from the queue it is called dequeue, peek is when you just look on the head element, again you can implement this data structure using linked list. deck is a mixture of stack and queue, priority queues are ones which has priority assigned to each value and the enque and deque operations takes place based on priority.
 
 ## Lesson 3: Searching and Sorting
 * **Binary Search:**
@@ -24,7 +24,7 @@
    * 1: It should call itself, 2: It should have a base case, othewise it goes in a an infinite loop, 3: input should be different while calling recursion.
    * Example of a recursive function which returns zero, and returns nth fibonacci element.
 * **Sorting:**
-  * There are many sorting algorithms, example the naive approach to sort people according to heigt will be to compare first two person at a time.
+  * There are many sorting algorithms, example the naive approach to sort people according to height will be to compare first two person at a time.
   * Space complexities should always be deal with if you have large data, as inplace sorting does sorting in same array, rather then creating new array.
 * **Bubble Sort:**
   * Its is a great example of inplace sorting algorithm
@@ -53,3 +53,4 @@
   * ```Load Factor = Number of Entries / Number of Buckets```
   * The purpose of a load factor is to give us a sense of how "full" a hash table is. For example, if we're trying to store 10 values in a hash table with 1000 buckets, the load factor would be 0.01, and the majority of buckets in the table will be empty. We end up wasting memory by having so many empty buckets, so we may want to rehash, or come up with a new hash function with less buckets. We can use our load factor as an indicator for when to rehash—as the load factor approaches 0, the more empty, or sparse, our hash table is. 
   * On the flip side, the closer our load factor is to 1 (meaning the number of values equals the number of buckets), the better it would be for us to rehash and add more buckets. Any table with a load value greater than 1 is guaranteed to have collisions.
+* **Hash Maps:** 
