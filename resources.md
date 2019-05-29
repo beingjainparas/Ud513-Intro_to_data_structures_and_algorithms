@@ -38,8 +38,6 @@
 * **Quick Sort:**
   * Its is an example of inplace sorting algorithm, you take a pivot element usually the last one and take that pivot elemnet to its exact location by having all elemnet smaller then pivot to left and larger then pivot to right.
   * It takes n-1 comparission for each steps each time which gives worst case complexities as O(nsquare) and average case and best case complexities as O(nlogn) with space complexity of O(1) as it is inplace.
-  * Sorting is pretty tedious—take a break and check out [this comic](https://xkcd.com/1185/) inspired by merge sort. 
-  * You can learn more about merge sort, as well as see many more visualizations, in the online Algorithms [textbook](https://algs4.cs.princeton.edu/22mergesort/). This book is often nice for a more in-depth analysis of topics, but beware—all of the examples are in Java! For merge sort, it's particularly worth reading up on top-down and bottom-up merge sort.
 * **Note:**
   * Congrats on getting through three different types of sorts! You should also investigate some of the other famous sorting algorithms. You can watch all of them in action [here](https://visualgo.net/en/sorting?slide=1) (and see a coding solution too).
 
